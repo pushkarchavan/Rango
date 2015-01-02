@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+{% load static %} <!-- New line -->
+
+<html>
+
+    <head>
+        <title>About Rango</title>
+    </head>
+
+    <body>
+        <h1>Rango is a social Media Platform</h1>
+        <p>Hello {{ rango_user }} !!!<strong> {{ boldmessage }}</strong></p><br />
+        <br />
+        <a href="/rango/"><img src="{% static "rango.jpg" %}" alt="Rango" height="256" width="300"/></a> <!-- New line -->
+    </body>
+
+</html>
