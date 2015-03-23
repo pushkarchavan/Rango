@@ -10,6 +10,8 @@ class PageInline(admin.TabularInline):
 class CategoryAdmin(admin.ModelAdmin):
   inlines = [PageInline]
   fieldsets = [('Categories', {'fields': ['name']}),]
-  searchfield = ['name']
+  list_display = ('name', 'views', 'likes')
+  search_fields = ['name']
+  
 
 admin.site.register(Category, CategoryAdmin)
